@@ -1,0 +1,17 @@
+name: Download a file
+description: "Download a file from a URL and save to target path"
+inputs:
+  url:
+    description: "URL to file"
+    required: true
+  target-path:
+    description: "Target path"
+    required: false
+    default: "."
+
+runs:
+  using: composite
+  steps:
+    - name: 📥 Download a file
+      run: wget -nc -P ${{ inputs.target-path }} ${{ inputs.url }}
+      shell: bash
