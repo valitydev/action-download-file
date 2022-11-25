@@ -1,5 +1,8 @@
 name: Download a file
-description: "Download a file from a URL and save to target path"
+description: "Download a file from a URL and save it to the target path"
+branding:
+  icon: "download"
+  color: "orange"
 inputs:
   url:
     description: "URL to file"

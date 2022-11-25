@@ -24,13 +24,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v2
+        - uses: actions/checkout@v3
+
         - uses: valitydev/action-download-file@v1
           with:
             url: https://raw.githubusercontent.com/valitydev/action-download-file/master/README.md
             target-path: .
 ```
-
-## TODO
-
-- Add `replace` and `filename` options
